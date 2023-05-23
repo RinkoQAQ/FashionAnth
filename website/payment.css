@@ -1,0 +1,32 @@
+form{
+    width: 40em;
+    background-color: beige;
+    padding: 1vw;
+}
+
+input:valid{
+    background-color: green;
+}
+
+input:invalid{
+    background-color: red;
+}
+
+form label {
+    display: inline-block;
+    width: 5em;
+    text-align: right;
+}
+
+form input{
+    width: 15em;
+    margin: 0.5vm;
+    padding: 0.5vm;
+    
+}
+
+input[type="submit"]{
+    width: 10vm;
+    background-color: brown;
+    color:white;
+}

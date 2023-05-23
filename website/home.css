@@ -1,0 +1,4 @@
+.home.info span,
+    .home.info {
+        writing-mode: vertical-lr;
+    }

@@ -1,0 +1,9 @@
+    body {
+        --bgcolor: #bb653a;
+        background-color: var(--bgcolor);
+      }
+      
+      h1 {
+        background-color: black;
+        color: white;
+        }

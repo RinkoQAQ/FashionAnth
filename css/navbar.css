@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Gabriela&family=Josefin+Sans&family=Playfair+Display:ital,wght@1,400;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Raleway:ital,wght@0,400;0,600;1,200&display=swap');
+
 
 html {
   box-sizing: border-box;
@@ -8,6 +9,8 @@ html {
 }
 
 body{
+  --bgcolor: #d1c0bb;
+  background-color: var(--bgcolor);
   font-family: 'Playfair Display', sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -16,7 +19,7 @@ body{
 }
 
 h2 {
-  font-family: "Gabriela", serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .main {
@@ -25,23 +28,30 @@ h2 {
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
-  font-family: "Gabriela", serif;
+  background-color: var(--bgcolor);
+  font-family: 'Raleway', sans-serif;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
 .active {
-  background-color:rgb(144, 172, 88);
-  color: white
+  --selectword:rgb(156, 156, 156);
+  background-color:inherit;
+  color: var(--selectword);
 }
 
 .topnav .icon {
@@ -58,7 +68,7 @@ h2 {
   font-size: 17px;    
   border: none;
   outline: none;
-  color: white;
+  color: #000000;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -68,7 +78,7 @@ h2 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: inherit;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -84,12 +94,12 @@ h2 {
 }
 
 .topnav a:hover, .dropdown:hover .dropbtn {
-  background-color: rgb(144, 172, 88);
-  color: white;
+  background-color: var(--bgcolor);
+  color: #000000;
 }
 
 .dropdown-content a:hover {
-  background-color: rgb(144, 172, 88);
+  background-color: var(--bgcolor);
   color: black;
 }
 

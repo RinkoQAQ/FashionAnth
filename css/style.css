@@ -18,6 +18,15 @@ body{
 
 }
 
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
 	line-height: 1.428;
   font-family: 'Raleway', sans-serif;
@@ -54,7 +63,7 @@ p {
 
 .topnav {
   overflow: hidden;
-  background-color: var(--bgcolor);
+  background-color: #f2f2f2;
   font-family: 'Raleway', sans-serif;
   padding: auto;
 }
@@ -166,3 +175,4 @@ p {
     text-align: left;
   }
 }
+

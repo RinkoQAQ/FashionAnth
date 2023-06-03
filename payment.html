@@ -1,81 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/payment.css" />
-    <script src="js/payment.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fashion Anything</title>
 
-    <title>Payment Fashion Anything</title>
-    <!--Mid Bar-->
-    <li><a href="">Account</a> </li>
-    <a href="#men">Men</a>
-    <a href="#women">Women</a>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/payment.css">
 
-    <!--Right Bar-->
-    <li><a href="search.html">Search</a> </li>
-    <li><a href="">Account</a></li>
-    <li><a href="cart.html">Cart(#pro_count)</a> </li>
 
-    <h1>Fashion Anything</h1>
-    <h2>Wholesale Scarves Factory Direct! </h2>
-</head>
+  </head>
+  <body>
+    <h1>FASHION ANYTHING</h1>
+    <!-- NAV BAR STR -->
+    <div class="topnav" id="myTopnav">
+      <a href="index.html"><b>Fashion Anything</b></a>
+      <a href="#men">Men</a>
+      <a href="#women">Women</a>
+      <a href="search.html">Search</a>
+      <div class="topnav-right">
+        <a href="cart.html">Cart</a>
+        <a href="#account">Account</a>
+      </div>
+      <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+    <!-- NAV BAR END -->
 
-<!-- Body -->
-<body>
-    <h1>Checkout billing details</h1>
-    <form action="confirm.html" onsubmit="return validateForm()">
-        <p>
-        <label for="name">Your name: </label>
-        <input type="text" id="name" name="name" pattern="[a-z|A-Z| |-]*" 
-        oninvalid="this.setCustomValidity('Please enter your name.')"/>
-    </p>
+    <div class="container">
+        <h2>Billing Details</h2>
+        <form id="billingForm">
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select a country</option>
+                    <option value="Australia">USA</option>
+                    <option value="USA">USA</option>
+                    <option value="New">New Zealand</option>
+                    <!-- Add more options here -->
+                </select>
+            </div>
+            <button type="submit">Buy Now</button>
+            
+        </form>
+    </div>
 
-        <p>
-        <label for="phone">Your phone: </label>
-        <input type="tel" id="phone" name="phone"
-        oninvalid="this.setCustomValidity('Please enter only numbers.')"/>
-    </p>
-    <p>
-        <label for="address">Address: </label>
-        <input type="text" id="address" name="address"/>
-    </p>
-        
-    <p>
-        <label for="state">State: </label>
-        <input type="text" id="state" name="state"/>
-    </p>
-    <p>
-        <label for="country">Country: </label>
-        <input type="text" id="country" name="country"/>
-    </p>
-    <p>
-        <label for="postcode">Postcode: </label>
-        <input type="number" id="postcode" name="postcode" min="1" max="9999"/>
-    </p>
-    </form>
 
-    
-    <button type="button">Place order</button>
+
+
+      <footer class="footer"><h1>Fashion Anything</h1></footer>
+      <footer class="footer">
+        <p class="footer-text">FashionAnything.com is an online wholesale scarves store featuring
+          Scarves, Pashminas, Shawls, Wraps ,Cashmere Feel Scarves and
+          accessories. Wholesale pashmina direct from factory! Our Pashmina
+          Scarves which are made of high quality grade A materials and perfect
+          for retailers, re-sellers, daily wearing, gifts, wedding, etc...</p>
+      </footer>
+      <footer class="footer"><p> © Lin Yang  Student ID:1255064</p></footer>
+      <footer class="footer"><p> INFO20005 Assignment: Redesign FashionAnything.com</p></footer>
+  
+  
+      <script src="js/style.js"></script>
+      <script src="js/payment.js"></script>
+    </body>
 
 
   
-
-</body>
-
-
-<!--Footer START-->
-<footer>
-
-    <h1>Fashion Anything</h1>
-    
-    </footer>
-
-
-
-
-
 </html>

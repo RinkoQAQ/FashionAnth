@@ -86,16 +86,20 @@ a:active {
 
 .product-name {
   display: grid;
-  height: 60px;
+  height: 80px;
   font-weight: bold;
   margin-bottom: 5px;
 }
 
 .product-price {
+  display: grid;
+  height: 30px;
   margin-bottom: 10px;
 }
 
 .product-gender {
+  display: grid;
+  height: 30px;
   font-style: italic;
   color: #777;
   margin-bottom: 10px;

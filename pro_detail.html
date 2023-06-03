@@ -8,7 +8,7 @@
     <title>Fashion Anything</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/confirm.css">
+    <link rel="stylesheet" href="css/pro_detail.css">
 
     <script src="js/style.js"></script>
 
@@ -29,7 +29,71 @@
     </div>
     <!-- NAV BAR END -->
 
+    <div class="ctn">
+          <!-- Product Galry-->
+          <div class="product-container">
+            <div class="slide">
+              <img src="img/sc1.avif" alt="Slide 1">
+            </div>
+            <div class="slide">
+              <img src="img/pd01.avif" alt="Slide 2">
+            </div>
+            <div class="slide">
+              <img src="img/pd02.avif" alt="Slide 3">
+            </div>
+            <div class="slide">
+              <img src="img/pd3.avif" alt="Slide 4">
+            </div>
+            <div class="slide">
+              <img src="img/pd05.jpg" alt="Slide 5">
+            </div>
+            <div class="slide">
+              <img src="img/pd06.avif" alt="Slide 6">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+    
+          <div class="product-infomation">
+            <div class="proname">
+              <h2>CASHMERE Scarf (CHECKED)</h2>
+          </div>
+          <div class="describe">
+              <h3></h3>
+              <h5>Quick Overview: Cashmere Feel Scarf</h5>
+              <p>Model#: FA_100-18</p>
+          </div>
+          <div class="price">
+              <h3>$4.37</h3>
+          </div>
+          <div class="quantity">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+        </div>
+          <a href="#" class="add-to-cart">Add to Cart</a>
+      </div>
+          </div>
 
+
+        </div>
+
+        <div class="info">
+          <h4>Materials</h4>
+          <h5 style="text-indent:5%">  Model#: FA_100-18</h5>
+          <p style="text-indent:5%">
+              Please note that this product may have different product ID, even if it is the same item.
+          </p>
+          
+            <p style="text-indent:5%"><b>FABRIC DETAILS</b></p>
+            <p style="text-indent:10%">100% Cashmere</p>
+            <p style="text-indent:5%"><b>SIZE</b></p>
+            <p style="text-indent:10%">176 x 33cm, Fringe: 6cm x 2</p>
+            <p style="text-indent:5%"><b>WASHING INSTRUCTIONS</b></p>
+            <p style="text-indent:10%">Do not wash, Dry clean only</p>
+            <p style="text-indent:10%">- The images shown may include colours that are not available.</p>
+        
+        </div>
 
       <footer class="footer"><h1>Fashion Anything</h1></footer>
       <footer class="footer">
@@ -41,6 +105,31 @@
       </footer>
       <footer class="footer"><p> © Lin Yang  Student ID:1255064</p></footer>
       <footer class="footer"><p> INFO20005 Assignment: Redesign FashionAnything.com</p></footer>
+
+      <script src="js/style.js"></script>
+        
+  <script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let slides = document.getElementsByClassName("slide");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[slideIndex - 1].style.display = "block";
+}
+</script>
   </body>
 
 

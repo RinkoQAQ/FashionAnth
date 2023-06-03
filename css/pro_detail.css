@@ -29,8 +29,12 @@
     margin-left: 20%;
     margin-right: 20%;
     text-align: left;
+    align-items: center;
+    justify-content: center;
 }
   
+
+
   .slide img {
     width: 100%;
     height: auto;

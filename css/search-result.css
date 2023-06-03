@@ -32,61 +32,75 @@
 
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 70%;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 70%;
+}
 
+.product {
+  width: calc(25% - 10px);
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+@media screen and (max-width: 767px) {
   .product {
-    width: calc(25% - 10px);
-    margin-bottom: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 1px solid #ddd;
+    width: calc(50% - 10px);
   }
+}
 
-  @media screen and (max-width: 767px) {
-    .product {
-      width: calc(50% - 10px);
-    }
-  }
+.product-info {
+  text-align: center;
+}
+a:link {
+  text-decoration: none;
+}
 
-  .product-info {
-    text-align: center;
-  }
+a:visited {
+  text-decoration: none;
+}
 
-  .product-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
+a:hover {
+  text-decoration: none;
+}
 
-  .product-name {
-    display: grid;
-    height: 60px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+a:active {
+  text-decoration: none;
+}
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
 
-  .product-price {
-    margin-bottom: 10px;
-  }
+.product-name {
+  display: grid;
+  height: 60px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
 
-  .product-gender {
-    font-style: italic;
-    color: #777;
-    margin-bottom: 10px;
-  }
+.product-price {
+  margin-bottom: 10px;
+}
 
-  .add-to-cart {
-    display: inline-block;
-    padding: 5px 10px;
-    background-color: #4CAF50;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 3px;
-  }
+.product-gender {
+  font-style: italic;
+  color: #777;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  display: inline-block;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}

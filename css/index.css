@@ -71,8 +71,14 @@ a:active {
     color: #fff;
     text-decoration: none;
     border-radius: 3px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
           
+
+      .add-to-cart:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      }
   
 .slideshow-container {
   position: relative;
@@ -107,4 +113,22 @@ a:active {
 
 .next {
   right: 10px;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+ 
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+ 
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }

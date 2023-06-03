@@ -1,0 +1,36 @@
+
+<head>
+    <style>
+      /* CSS for the default state */
+      .button {
+        padding: 10px 20px;
+        background-color: blue;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+  
+      /* CSS for the mouseover state */
+      .button:hover {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HTML button with mouseover and mouseout events -->
+    <button class="button" onmouseover="changeColor(true)" onmouseout="changeColor(false)">Click Me!</button>
+  
+    <script>
+      // JavaScript function to handle the events
+      function changeColor(isMouseOver) {
+        var button = document.querySelector('.button');
+        
+        if (isMouseOver) {
+          button.style.backgroundColor = 'red';
+        } else {
+          button.style.backgroundColor = 'blue';
+        }
+      }
+    </script>
+  </body>
+  </html>

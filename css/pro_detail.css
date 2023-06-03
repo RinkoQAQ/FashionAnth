@@ -97,7 +97,12 @@
     width: 80%;
     margin: 0 auto;
     margin-bottom: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
+  
+  .add-to-cart:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);}
   
   .quantity button {
     border-radius: 3px;
